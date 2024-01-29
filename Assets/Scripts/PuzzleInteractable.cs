@@ -101,7 +101,6 @@ public class PuzzleInteractable : MonoBehaviour
         {
             CheckForSnapPoint(false);
         }
-        Debug.Log(distance);
     }
 
     public void CheckForSnapPoint(bool isConnected)
@@ -109,17 +108,14 @@ public class PuzzleInteractable : MonoBehaviour
         if (snapPoint.name == "Snap Point 1")
         {
             puzzleManager.ravenPiece1Connected = isConnected;
-            //gameObject.GetComponentInParent<RavenPuzzle>().SetPieceTrue(1);
         }
         else if (snapPoint.name == "Snap Point 2")
         {
             puzzleManager.ravenPiece2Connected = isConnected;
-            //gameObject.GetComponentInParent<RavenPuzzle>().SetPieceTrue(2);
         }
         else if (snapPoint.name == "Snap Point 3")
         {
             puzzleManager.ravenPiece3Connected = isConnected;
-            //gameObject.GetComponentInParent<RavenPuzzle>().SetPieceTrue(2);
         }
     }
 }
